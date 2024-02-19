@@ -1,0 +1,54 @@
+body
+{
+    margin: 0px;
+}
+
+header 
+{
+   background-color: #5D72E9;
+   display: none;
+   justify-content: space-between;
+   color: #ffff;
+   font-family: "Inter", sans-serif;
+   padding: 10px;
+}
+
+.botao
+{
+    position: absolute;
+
+}
+
+.banner
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#botao-hamburguer
+{
+ background-color: transparent;
+ border: transparent;
+ color: #ffff;
+ font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1280px)
