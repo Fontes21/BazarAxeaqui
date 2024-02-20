@@ -36,12 +36,16 @@ header
 }
 
 
+.opcao
+{
+    display: flex;
+    flex-direction: row;
+}
 
-
-
-
-
-
+.caixa
+{
+   margin: 15px;
+}
 
 
 
