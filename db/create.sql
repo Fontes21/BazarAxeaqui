@@ -15,6 +15,7 @@ CREATE TABLE usuario (
 DELIMITER //
  
 CREATE PROCEDURE picliente (
+    IN _id              INt,
     IN _nome            VARCHAR(100),
     IN _email           VARCHAR(100),
     IN _senha			VARCHAR(100),
@@ -26,7 +27,7 @@ CREATE PROCEDURE picliente (
     IN _ambos           INT(0)
 )
 BEGIN
-    INSERT INTO usuario (nome, email,femninas, masculinas, outrosProdutos, vender, comprar,ambos)
-    VALUES (_nome, _email, _senha, _femininas , _masculinas, _outrosProdutos, _vender, _comprar, _ambos);
+    INSERT INTO usuario (id, nome, email,femninas, masculinas, outrosProdutos, vender, comprar,ambos)
+    VALUES (_id,_nome, _email, _senha, _femininas , _masculinas, _outrosProdutos, _vender, _comprar, _ambos);
 END //
  

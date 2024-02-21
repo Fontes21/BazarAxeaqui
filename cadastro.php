@@ -30,63 +30,73 @@
         <label>Senha:</label><br>
         <input type="password" placeholder="Informe uma senha com 8 caracteres ou mais" name="senha" minlength="3" required><br><br>
 
+    
     <label>Tenho interesse em peças:<label><br>
 
         <div class="opcao">  
 
-       <article class="caixa">
-       <label>Femininas:</label><br>
-       <input type="checkbox" name="senha"><br><br>
+      <article class="caixa"> 
+       <label>Femininas:</label><br></br>
+       <input type="checkbox" name="femininas"><br></br>
        </article>
 
        <article class="caixa">
-        <label>Masculinas:</label><br>
-        <input type="checkbox" name="senha"><br><br>
+        <label>Masculinas:</label><br></br>
+        <input type="checkbox" name="masculinas"><br></br>
         </article>
     
         <article class="caixa">
-        <label>Outros Produtos:</label><br>
-        <input type="checkbox" name="senha"><br><br>
+        <label>Outros Produtos:</label><br></br>
+        <input type="checkbox" name="outrosProdutos"><br></br>
         </article>
 
     </div>
 
-        <label>Você deseja:</label><br>
+        <label>Você deseja:</label><br></br>
 
         <section class="opcao">
 
         <article class="caixa">
-        <label>Vender:</label><br>
-        <input type="checkbox" name="senha"><br><br>
+        <label>Vender:</label><br></br>
+        <input type="checkbox" name="vender"><br></br>
         </article>
 
         <article class="caixa">
         <label>Comprar:</label><br>
-        <input type="checkbox" name="senha"><br><br>
+        <input type="checkbox" name="comprar"><br></br>
         </article>
 
         <article class="caixa">
-        <label>Ambos:</label><br>
-        <input type="checkbox" name="senha"><br><br>
+        <label>Ambos:</label><br></br>
+        <input type="checkbox" name="ambos"><br></br>
         </article>
 
         </section>
   
-        <input type="submit" name="inserir" value="Cadastrar">
- 
     </div>
+
+    <input type="submit" name="inserir" value="Cadastrar">
 
     <?php
  
-              if ( isset($_REQUEST["cliente"]) ) 
+        if (isset($_REQUEST["inserir"]) ) 
          {
-           include_once("cliente.php");
-          $u = new Cliente (); 
-             $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["senha"], $_REQUEST["femininas"], $_REQUEST["masculinas"] ,$_REQUEST["outrosProdutos"], $_REQUEST["vender"], $_REQUEST["comprar"], $_REQUEST["ambos"]); 
-        
-          echo $u->cliente() == true 
+            
+            $feminina = "";
+            $masculina = "";
+            $outros = "";
+            $vender = "";
+            $comprar = "";
+            $ambos = "";
 
-            ?"<p>cadastrado com sucesso.</p>" 
-             :  "<p>Ocorreu um erro.</p>";
- }
-?>
+            include_once("cliente.php");
+            $u = new Cliente(); 
+            $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["senha"], $feminina, $masculina ,$outros, $vender, $comprar,$ambos); 
+
+             echo $u->cliente() == true 
+             ?"<p>cadastrado com sucesso.</p>" 
+              :  "<p>Ocorreu um erro.</p>";
+        }
+    ?>
+
+</form>

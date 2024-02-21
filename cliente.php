@@ -1,6 +1,5 @@
 <?php
- 
-    
+   
  class Cliente
  {
      private $nome;
@@ -12,17 +11,18 @@
      private $vender;
      private $comprar;
      private $ambos;
+     
 
      public function __construct(){}
 
-     public function create($_nome, $_email, $_senha, $_femininas, $_masculinas, $_outrosProdutos, $_vender, $_comprar, $_ambos,) {
+     public function create($_nome, $_email, $_senha, $_femininas, $_masculinas, $_outrosProdutos, $_vender, $_comprar, $_ambos) {
 
         $this->nome = $_nome;
         $this->email = $_email;
         $this->femininas = $_femininas;
         $this->masculinas = $_masculinas;
-        $this->senha = md5($_senha);
-         $this->outrosprodutos = $_outrosprodutos;
+        $this->senha = md5 ($_senha);
+        $this->outrosprodutos = $_outrosProdutos;
         $this->vender = $_vender;
         $this->comprar = $_comprar;
         $this->ambos = $_ambos;
@@ -99,7 +99,7 @@
      public function cliente() {
 
          include_once('./db/conn.php');
-         $sql = "CALL picliente(:nome, :email, :femninas, :masculinas, :outrosProdutos, :vender, :comprar, :ambos)";
+         $sql = "CALL picliente(:nome, :email, :senha, :femininas, :masculinas, :outrosProdutos, :vender, :comprar, :ambos)";
 
          $data = [
              'nome' => $this->nome,
@@ -118,3 +118,4 @@
 
          return true;
      }
+    }
