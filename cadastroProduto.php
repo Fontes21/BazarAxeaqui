@@ -86,28 +86,6 @@
         }
     ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
     <input type="submit" name="inserir" value="Cadastrar">
 
     <?php
