@@ -118,4 +118,33 @@
 
          return true;
      }
+
+     
+    public function listarCliente() {
+        include_once('./db/conn.php');
+        $sql = "CALL psListarCliente  ('')";
+
+        $data = $conn->query($sql)->fetchAll();
+
+        return $data;
     }
+
+    public function excluirCliente($_id) {
+        include_once("./db/conn.php");
+        $sql = "CALL pddeletar(:id)";
+
+        $data = [
+            'id' => $_id
+        ];
+
+        $statement = $conn->prepare($sql);
+        $statement->execute($data);
+
+        return true;
+    }
+
+
+
+    }
+
+
