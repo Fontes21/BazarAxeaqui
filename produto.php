@@ -20,7 +20,7 @@
 
      public function __construct(){}
 
-     public function create($_Titulo, $_Marca, $_SemMarca,$_Descricao, $_produtoNovo, $_produtoUsado, $_Departamento, $_Categoria, $_Subcategoria, $_Quantidade, $_Tamanho, $_Peso, $_Preco, $_TipoDeEntrega) {
+     public function create($_Titulo, $_Marca, $_SemMarca,$_Descricao, $_ProdutoNovo, $_ProdutoUsado, $_Departamento, $_Categoria, $_Subcategoria, $_Quantidade, $_Tamanho, $_Peso, $_Preco, $_TipoDeEntrega) {
 
         $this->Titulo = $_Titulo;
         $this->Marca = $_Marca;
@@ -66,16 +66,8 @@
         return $this->Departamento;
     }
 
-    public function getTamanho() {
-        return $this->Tamanho;
-    }
-
     public function getSubcategoria() {
         return $this->Subcategoria;
-    }
-
-    public function getTamanho() {
-        return $this->Tamanho;
     }
 
     public function getQuantidade() {
@@ -155,22 +147,22 @@
     public function produto() {
 
         include_once('./db/conn.php');
-        $sql = "CALL piProduto(:Titulo, :Marca, :SemMarca, :Descricao, :produtoNovo, :produtoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
+        $sql = "CALL piProduto(:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
 
         $data = [
             'Titulo' => $this->Titulo,
             'Marca' => $this->Marca,
             'SemMarca' => $this->SemMarca,
             'Descricao' => $this->Descricao,
-            'produtoNovo' => $this->produtoNovo,
-            'produtoUsado' => $this->produtoUsado,
+            'ProdutoNovo' => $this->ProdutoNovo,
+            'ProdutoUsado' => $this->ProdutoUsado,
             'Departamento' => $this->Departamento,
             'Categoria' => $this->Categoria,
-            'Subcategoria' => $this->Subcategoria
+            'Subcategoria' => $this->Subcategoria,
             'Quantidade' => $this->Quantidade,
             'Tamanho' => $this->Tamanho,
             'Peso' => $this->Peso,
-            'Preco' => $this->Preco
+            'Preco' => $this->Preco,
             'TipoDeEntrega' => $this->TipoDeEntrega
         ];
 
@@ -180,10 +172,28 @@
         return true;
     }
 
+    public function ListarProduto() {
+        include_once('./db/conn.php');
+        $sql = "CALL psListarProduto  ('')";
 
+        $data = $conn->query($sql)->fetchAll();
 
+        return $data;
+    }
 
+     public function excluirProduto($_id) {
+        include_once("./db/conn.php");
+        $sql = "CALL pddeletarProduto(:id)";
 
+        $data = [
+            'id' => $_id
+        ];
+
+        $statement = $conn->prepare($sql);
+        $statement->execute($data);
+
+        return true;
+    }
 
 
 

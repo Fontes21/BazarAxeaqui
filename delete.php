@@ -1,9 +1,9 @@
 <?php
 
-include_once("cliente.php");
-$p = new Cliente ();
+include_once("produto.php");
+$p = new Produto ();
 
-$p ->excluirCliente ($_GET["pid"]);
+$p ->excluirProduto ($_GET["pid"]);
 echo "Usuario excluido";
 
 

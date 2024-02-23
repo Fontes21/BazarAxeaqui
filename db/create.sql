@@ -43,16 +43,7 @@ SELECT idCliente, nome, email, senha, femininas, masculinas, outrosProdutos, ven
 FROM cliente WHERE nome LIKE CONCAT(_nome, '%');
 END
 
-
-DELIMITER  //
-CREATE PROCEDURE pddeletar
-(
-in _id 		int
-)
-BEGIN
-	DELETE FROM cliente WHERE idcliente = _id;
-END  // 	
-
+//SELECT * FROM Vestuario
 
 
 DELIMITER  //
@@ -62,8 +53,8 @@ CREATE PROCEDURE piProduto(
     IN _Marca           VARCHAR(100),
     IN _SemMarca		INT(0),
     IN _Descricao       VARCHAR(100),
-    IN _produtoNovo     INT(0),
-    IN _produtoUsado    INT(0),
+    IN _ProdutoNovo     INT(0),
+    IN _ProdutoUsado    INT(0),
     IN _Departamento    VARCHAR(100),
     IN _Categoria       VARCHAR(100),
     IN _Subcategoria    VARCHAR(100),
@@ -74,6 +65,46 @@ CREATE PROCEDURE piProduto(
     IN _TipoDeEntrega   VARCHAR(100)
 )
 BEGIN
-    INSERT INTO usuario (Titulo, Marca, SemMarca, Descricao, produtoNovo, produtoUsado, Departamento, Categoria, Subcategoria, Quantidade, Tamanho, Peso, Preco, TipoDeEntrega)
-    VALUES (_Titulo, _Marca, _SemMarca, _Descricao, _produtoNovo, _produtoUsado, _Departamento, _Categoria, _Subcategoria, _Quantidade, _Tamanho, _Peso, _Preco, _TipoDeEntrega);
+    INSERT INTO produto (Titulo, Marca, SemMarca, Descricao, ProdutoNovo, ProdutoUsado, Departamento, Categoria, Subcategoria, Quantidade, Tamanho, Peso, Preco, TipoDeEntrega)
+    VALUES (_Titulo, _Marca, _SemMarca, _Descricao, _ProdutoNovo, _ProdutoUsado, _Departamento, _Categoria, _Subcategoria, _Quantidade, _Tamanho, _Peso, _Preco, _TipoDeEntrega);
 END //
+
+
+CREATE TABLE Produto (
+    idproduto       INT PRIMARY KEY AUTO_INCREMENT,  
+    Titulo          VARCHAR(100),
+    Marca           VARCHAR(100),
+    SemMarca		INT(0),
+    Descricao       VARCHAR(100),
+    ProdutoNovo     INT(0),
+    ProdutoUsado    INT(0),
+    Departamento    VARCHAR(100),
+    Categoria       VARCHAR(100),
+    Subcategoria    VARCHAR(100),
+    Quantidade      VARCHAR(100),
+    Tamanho         VARCHAR(100),
+    Peso            VARCHAR(100),
+    Preco           VARCHAR(100),
+    TipoDeEntrega   VARCHAR(100)
+);
+
+
+DELIMITER //
+CREATE PROCEDURE psListarProduto
+(
+	IN _Titulo		VARCHAR (100)
+)
+BEGIN
+SELECT *
+FROM produto WHERE Titulo LIKE CONCAT(_Titulo, '%');
+END
+
+
+DELIMITER  //
+CREATE PROCEDURE pddeletarProduto
+(
+in _id 		int
+)
+BEGIN
+	DELETE FROM produto WHERE idproduto = _id;
+END  // 	

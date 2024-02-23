@@ -22,46 +22,46 @@
 
  
         <label>Titulo:</label><br> 
-        <input type="text" placeholder= "ex: “blusa azul marinho”" name="nome" minlength="3" required><br><br>
+        <input type="text" placeholder= "ex: “blusa azul marinho”" name="Titulo" minlength="3" required><br><br>
  
         <label>Marca:</label><br>
-        <input type="email" placeholder="qual a marca do produto?" name="email" minlength="3" required><br><br>
+        <input type="text" placeholder="qual a marca do produto?" name="Marca" minlength="3" required><br><br>
 
-        <label>produto sem marca</label><br></br>
-       <input type="checkbox" name="femininas"><br></br>
+        <label>Produto sem marca</label><br></br>
+       <input type="checkbox" name="SemMarca"><br></br>
  
         <label>Descrição:</label><br>
-        <input type="password" placeholder="mulhes, homens,crianças,casa.." name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="quase nuca usei, marca boa uma camisa linda.." name="Descricao" minlength="3" required><br><br>
 
-        <label>produto novo</label><br></br>
-        <input type="checkbox" name="femininas"><br></br>
+        <label>Produto Novo</label><br></br>
+        <input type="checkbox" name="ProdutoNovo"><br></br>
 
-        <label>produto usado</label><br></br>
-        <input type="checkbox" name="femininas"><br></br>
+        <label>Produto Usado</label><br></br>
+        <input type="checkbox" name="ProdutoUsado"><br></br>
 
         <label> Departamento:</label><br>
-        <input type="password" placeholder="mulhes, homens,crianças,casa.." name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="mulhes, homens,crianças,casa.." name="Departamento" minlength="3" required><br><br>
 
         <label> Categoria:</label><br>
-        <input type="password" placeholder="roupa, acessórios, brinquedo..." name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="roupa, acessórios, brinquedo..." name="Categoria" minlength="3" required><br><br>
 
         <label> Subcategoria:</label><br>
-        <input type="password" placeholder="" name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="calça,moleton,lençol.." name="Subcategoria" minlength="3" required><br><br>
   
         <label>Quantidade:</label><br>
-        <input type="password" placeholder="" name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="" name="Quantidade" required><br><br>
 
         <label>Tamanho:</label><br>
-        <input type="password" placeholder="s" name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="" name="Tamanho"  required><br><br>
       
         <label>Peso:</label><br>
-        <input type="password" placeholder="" name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="" name="Peso" minlength="1" required><br><br>
 
-        <label>Preço:</label><br>
-        <input type="password" placeholder="R$" name="senha" minlength="3" required><br><br>
+        <label>Preço R$:</label><br>
+        <input type="text" placeholder="" name="Preco" minlength="3" required><br><br>
       
         <label>Tipo de entrega:</label><br>
-        <input type="password" placeholder="" name="senha" minlength="3" required><br><br>
+        <input type="text" placeholder="" name="TipoDeEntrega" minlength="3" required><br><br>
 
 
         <?php
@@ -69,45 +69,43 @@
         if (isset($_REQUEST["inserir"]) ) 
          {
             
-            $feminina = "";
-            $masculina = "";
-            $outros = "";
-            $vender = "";
-            $comprar = "";
-            $ambos = "";
+            if (isset($_REQUEST["SemMarca"]))
+            {
+                $semMarca = 1;
+            }
+            else
+            {
+                $semMarca = 0;
+            }
 
-            include_once("cliente.php");
+            if (isset($_REQUEST["ProdutoNovo"]))
+            {
+                $produtoNovo = 1;
+            }
+            else
+            {
+                $produtoNovo = 0;
+            }
+
+            if (isset($_REQUEST["ProdutoUsado"]))
+            {
+                $produtoUsado = 1;
+            }
+            else
+            {
+                $produtoUsado = 0;
+            }
+
+
+            include_once("produto.php");
             $u = new Produto (); 
-            $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["senha"], $feminina, $masculina ,$outros, $vender, $comprar,$ambos); 
-
-             echo $u->cliente() == true 
-             ?"<p>cadastrado com sucesso.</p>" 
+            $u->create($_REQUEST["Titulo"], $_REQUEST["Marca"], $semMarca, $_REQUEST["Descricao"],$produtoNovo, $produtoUsado,$_REQUEST["Departamento"],$_REQUEST["Categoria"],$_REQUEST["Subcategoria"], $_REQUEST["Quantidade"], $_REQUEST["Tamanho"], $_REQUEST["Peso"],$_REQUEST["Preco"],$_REQUEST["TipoDeEntrega"]);
+            echo $u->produto() == true 
+             ?"<p>Produto cadastrado com sucesso.</p>" 
               :  "<p>Ocorreu um erro.</p>";
         }
     ?>
 
     <input type="submit" name="inserir" value="Cadastrar">
-
-    <?php
- 
-        if (isset($_REQUEST["inserir"]) ) 
-         {
-            
-            $feminina = "";
-            $masculina = "";
-            $outros = "";
-            $vender = "";
-            $comprar = "";
-            $ambos = "";
-
-            include_once("cliente.php");
-            $u = new Cliente(); 
-            $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["senha"], $feminina, $masculina ,$outros, $vender, $comprar,$ambos); 
-
-             echo $u->cliente() == true 
-             ?"<p>cadastrado com sucesso.</p>" 
-              :  "<p>Ocorreu um erro.</p>";
-        }
-    ?>
 
 </form>

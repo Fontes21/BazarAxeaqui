@@ -47,8 +47,7 @@
                  <td>" . $item ["vender"] . "</td>
                  <td>" . $item ["comprar"] . "</td>
                  <td>" . $item ["ambos"] . "</td>
-                 <td> <a href='delete.php?pid=" . $item["idcliente"] .  "' onClick='return confirmar()'>Excluir</a> </td>
-
+                 
                      
             </tr>";          
         }
