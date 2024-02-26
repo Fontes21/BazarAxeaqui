@@ -55,6 +55,7 @@
            <td>" . $item ["Preco"] . "</td>
            <td>" . $item ["TipoDeEntrega"] . "</td>
            <td> <a href='delete.php?pid=" . $item["idproduto"] .  "' onClick='return confirmar()'>Excluir</a> </td>
+           <td> <a href='atualizar.php?pid=" . $item["idproduto"] .  "' >Atualizar</a> </td> 
 
                
       </tr>";          

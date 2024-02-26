@@ -108,3 +108,52 @@ in _id 		int
 BEGIN
 	DELETE FROM produto WHERE idproduto = _id;
 END  // 	
+
+
+DELIMITER //
+CREATE PROCEDURE psLoginCliente
+(
+	IN	_email		VARCHAR(100),
+    IN	_senha			VARCHAR(100)
+)
+SELECT * FROM Cliente WHERE email = _email AND senha = _senha
+
+
+DELIMITER //
+CREATE PROCEDURE puAtualizar
+(
+	IN _Titulo          VARCHAR(100),
+    IN _Marca           VARCHAR(100),
+    IN _SemMarca        INT(0),
+    IN _Descricao       VARCHAR(100),
+    IN _ProdutoNovo     INT(0),
+    IN _ProdutoUsado    INT(0),
+    IN _Departamento    VARCHAR(100),
+    IN _Categoria       VARCHAR(100),
+    IN _Subcategoria    VARCHAR(100),
+    IN _Quantidade      VARCHAR(100),
+    IN _Tamanho         VARCHAR(100),
+    IN _Peso            VARCHAR(100),
+    IN _Preco           VARCHAR(100),
+    IN _TipoDeEntrega   VARCHAR(100)
+)
+
+BEGIN
+	UPDATE Produto
+    SET
+      Titulo = _Titulo,
+      Marca = _Marca,
+      SemMarca = _SemMarca,
+      Descricao = _Descricao,
+      ProdutoNovo = _ProdutoNovo,
+      ProdutoUsado = _ProdutoUsado,
+      Departamento = _Departamento,
+      Categoria = _Categoria,
+      Subcategoria = Subcategoria,
+      Quantidade= _Quantidade,
+      Tamanho = Tamanho,
+      Peso = _Peso,
+      Preco = _Preco,
+      TipoDeEntrega = _TipoDeEntrega
+      WHERE idProduto= _id;
+END

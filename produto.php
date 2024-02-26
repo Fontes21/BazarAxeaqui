@@ -147,7 +147,7 @@
     public function produto() {
 
         include_once('./db/conn.php');
-        $sql = "CALL piProduto(:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
+        $sql = "CALL piProduto (:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
 
         $data = [
             'Titulo' => $this->Titulo,
@@ -195,8 +195,60 @@
         return true;
     }
 
+    public function atualizarProduto($_id)
+    {
+        include("./db/conn.php");
+        $sql = "CALL puAtualizar (:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
 
+        $data = [
+            'Titulo' => $this->Titulo,
+            'Marca' => $this->Marca,
+            'SemMarca' => $this->SemMarca,
+            'Descricao' => $this->Descricao,
+            'ProdutoNovo' => $this->ProdutoNovo,
+            'ProdutoUsado' => $this->ProdutoUsado,
+            'Departamento' => $this->Departamento,
+            'Categoria' => $this->Categoria,
+            'Subcategoria' => $this->Subcategoria,
+            'Quantidade' => $this->Quantidade,
+            'Tamanho' => $this->Tamanho,
+            'Peso' => $this->Peso,
+            'Preco' => $this->Preco,
+            'TipoDeEntrega' => $this->TipoDeEntrega
+        ];
 
+        $statement = $conn->prepare($sql);
+        $statement->execute($data);
+
+        return true;
+    }
+
+    public function buscarProduto($_id)
+    {
+        include("./db/conn.php");
+
+        $sql = "CALL puAtualizar (:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
+        $data = $conn->query($sql)->fetchAll();
+
+        foreach ($data as $item) {
+            $this->Titulo = $item["Titulo"];
+            $this->Marca = $item["Marca"];
+            $this->SemMarca = $item["SemMarca"];
+            $this->Descricao = $item["Descricao"];
+            $this->ProdutoNovo = $item["ProdutoNovo"];
+            $this->ProdutoUsado = $item["ProdutoUsado"];
+            $this->Departamento = $item["Departamento"];
+            $this->Categoria = $item["Categoria"];
+            $this->setSubcategoria = $item["Subcategoria"];
+            $this->Quantidade = $item["Quantidade"];
+            $this->Tamanho = $item["Tamanho"];
+            $this->Peso = $item["Peso"];
+            $this->Preco = $item["Preco"];
+            $this->TipoDeEntrega = $item["TipoDeEntrega"];
+        }
+        return true;
+
+    }
 
 
 

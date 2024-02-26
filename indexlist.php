@@ -47,7 +47,7 @@
                  <td>" . $item ["vender"] . "</td>
                  <td>" . $item ["comprar"] . "</td>
                  <td>" . $item ["ambos"] . "</td>
-                 
+              
                      
             </tr>";          
         }

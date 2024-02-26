@@ -143,7 +143,23 @@
         return true;
     }
 
-
+    public function conectarCliente($_email, $_senha) {
+        include_once("./db/conn.php");
+        $senha = md5($_senha);
+        $sql = "CALL psLoginCliente('$_email', '$senha')";
+        $statement = $conn->prepare($sql);
+       
+        $statement->execute();
+       
+        if ($user = $statement->fetch()) {
+            $this->nome = $user["nome"];
+            return true;
+        }
+       
+        else {
+            return false;
+        }
+    }
 
     }
 
