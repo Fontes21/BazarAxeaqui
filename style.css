@@ -47,11 +47,41 @@ header
    margin: 15px;
 }
 
+img
+{
+  margin: 0px;
+}
 
 
+.cadastro
 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.cadastro
+{
+    margin: 130px;
+    height: 581px;
+    width: 25%;
+    padding: 1%;
+    border:#FAD824 1px solid;
+}
 
+input
+{
+    width: 350px;
+    margin: 9px;
+    height: 25px;
+    padding: 1%;
+    border:#FAD824 1px solid;
+    background-color:  #262626;
+    border-radius: 5px;
+    color:#FFFFFF
+}
 
 
 

@@ -8,15 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="assets/css/estilo.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <script src="assets/js/util.js"></script>
 </head>
 <body>
 
+   <img src="img/banner.png" width="400px" height="190px">
+
     <h1>Acesso</h1>
 
-    <form method="POST">
 
+    <div id="cadastro">
+
+    <form method="POST">
         <label>Email:</label> 
         <input type="text" name="email" minlength="3" required><br><br>
 
@@ -24,6 +28,9 @@
         <input type="password" name="senha" minlength="3" required><br><br>
 
         <input type="submit" name="acessar" value="Acessar">
+
+        
+    </div>
 
         <?php
 
