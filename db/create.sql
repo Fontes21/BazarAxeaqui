@@ -157,3 +157,15 @@ BEGIN
       TipoDeEntrega = _TipoDeEntrega
       WHERE idProduto= _id;
 END
+
+DELIMITER // 
+CREATE PROCEDURE psBuscarProduto
+(
+IN    id 	int
+)
+BEGIN
+ 
+SELECT * FROM produto
+where idproduto = id;
+ 
+END //

@@ -13,10 +13,11 @@
 </head>
 <body>
 
-   <img src="img/banner.png" width="400px" height="190px">
+   <img src="img/banner.png">
 
     <h1>Acesso</h1>
 
+ 
 
     <div id="cadastro">
 

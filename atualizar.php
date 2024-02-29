@@ -42,7 +42,7 @@
             <input type='checkbox' name='Departamento' minlength='3' 'value='" . $p->getDepartamento() . " ' required> <br>
 
             <label> Categoria:</label>
-            <input type='text' name='Categoria' minlength='3' 'value='" . $p->getCategotia() . " ' required> <br>
+            <input type='text' name='Categoria' minlength='3' 'value='" . $p->getCategoria() . " ' required> <br>
 
             <label> Subcategoria:</label>
             <input type='text' name='Subcategoria' minlength='3' 'value='" . $p->getSubcategoria() . " ' required> <br>

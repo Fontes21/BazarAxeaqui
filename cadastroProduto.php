@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-<div id="CADASTRE-SE AGORA:">
+    <img src="img/banner.png" >
 
-    <h1>Cadastrar Produto</h1>
-</div>
 
-<div class="caixa">
+    <h1>Capriche nas fotos e na descrição do seu produto</h1>
+   
+    <div class="caixa">
 
     <div id="cadastro">
 
@@ -27,18 +30,22 @@
         <label>Marca:</label><br>
         <input type="text" placeholder="qual a marca do produto?" name="Marca" minlength="3" required><br><br>
 
+        <div id= "dupla">
         <label>Produto sem marca</label><br></br>
        <input type="checkbox" name="SemMarca"><br></br>
+       </div>
  
         <label>Descrição:</label><br>
         <input type="text" placeholder="quase nuca usei, marca boa uma camisa linda.." name="Descricao" minlength="3" required><br><br>
 
+        <div id= "dupla">
         <label>Produto Novo</label><br></br>
         <input type="checkbox" name="ProdutoNovo"><br></br>
 
         <label>Produto Usado</label><br></br>
         <input type="checkbox" name="ProdutoUsado"><br></br>
-
+        </div>
+        
         <label> Departamento:</label><br>
         <input type="text" placeholder="mulhes, homens,crianças,casa.." name="Departamento" minlength="3" required><br><br>
 
@@ -63,6 +70,8 @@
         <label>Tipo de entrega:</label><br>
         <input type="text" placeholder="" name="TipoDeEntrega" minlength="3" required><br><br>
 
+</div>
+    </div>
 
         <?php
  

@@ -66,12 +66,20 @@
         return $this->Departamento;
     }
 
+    public function getCategoria(){
+        return $this->Categoria;
+    }
+
     public function getSubcategoria() {
         return $this->Subcategoria;
     }
 
     public function getQuantidade() {
         return $this->Quantidade;
+    }
+
+    public function getTamanho(){
+        return $this->Tamanho;
     }
 
     public function getPeso() {
@@ -227,7 +235,7 @@
     {
         include("./db/conn.php");
 
-        $sql = "CALL puAtualizar (:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega)";
+        $sql = "CALL psBuscarProduto (:Titulo, :Marca, :SemMarca, :Descricao, :ProdutoNovo, :ProdutoUsado, :Departamento, :Categoria, :Subcategoria, :Quantidade, :Tamanho, :Peso, :Preco, :TipoDeEntrega, :Id)";
         $data = $conn->query($sql)->fetchAll();
 
         foreach ($data as $item) {
