@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-<div id="CADASTRE-SE AGORA:">
+<header>
+    <div class="menu">
+        <a>Inicio</a>
+        <a>Contato</a>
+        <a>Minha Sacola</a>
+        <a>Perfil</a>
+    </div>
+</header>
 
-    <h1>Cadastre-se aqui</h1>
-</div>
+<div class="conjunto"> 
 
-<div class="caixa">
+    <div id="cadascliente">
 
-    <div id="cadastro">
+    <h1>CADASTRE-SE AGORA:</h1>
 
     <form method="POST">
 
@@ -74,6 +83,11 @@
         </section>
   
     </div>
+
+<div class='moça'>
+</div>
+
+</div>
 
     <input type="submit" name="inserir" value="Cadastrar">
 

@@ -3,16 +3,16 @@ body
     margin: 0px;
 }
 
-header 
+.header
 {
-   background-color: #5D72E9;
+   background-color: #432F6C;
    display: flex;
    justify-content: space-between;
    color: #ffff;
    font-family: "Inter", sans-serif;
    padding: 10px;
    width:400px;
-   height:190px;
+   height:200px;
 }
 
 .botao
@@ -21,15 +21,11 @@ header
 
 }
 
-img
+a
 {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width:400px;
-   height:190px;
+  font-size: 30px;
+  padding: 10px;
 }
-
 
 #botao-hamburguer
 {
@@ -50,12 +46,6 @@ img
 {
    margin: 15px;
 }
-
-img
-{
-  margin: 0px;
-}
-
 
 .cadastro
 
@@ -120,6 +110,7 @@ h1
  font-size: 25px;
  display: flex;
  justify-content: center;
+ align-items: center;
  padding: 10%;
  
  
@@ -149,20 +140,26 @@ h1
 
 
 
-
-
 @media (min-width: 1280px){
     
 
 
 header 
 {
-   background-color: #5D72E9;
+   background-color: #432F6C;
    display: flex;
    justify-content: space-between;
    color: #ffff;
    font-family: "Inter", sans-serif;
    padding: 10px;
+   height: 50px;
+}
+
+a
+{
+  font-size: 30px;
+  padding: 10px;
+  margin: 5px;
 }
 
 img
@@ -177,6 +174,10 @@ img
 h1
 {
     font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
 }
 
 input[type="text"]
@@ -248,14 +249,57 @@ label
    justify-content: center;
 }
 
+.cliente
+{
+   margin: 30px;
+   display: flex;
+   flex-direction: row;
+   width: 1000px;
 
 
+}
+
+#CADASTRE-SE 
+{
+    color:black;
+    display: flex;
+    justify-content: start;
+    height: 125px;
+    width: 620px;
+}
 
 
+#cadascliente
 
+{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10%;
+}
 
+#cadascliente
+{
+    height: 125px;
+    width: 620px;
+    padding: 5%;
+    border:#432F6C 1px solid;
+    color: black;
+}
 
+.conjunto
+{
+    display: flex;
+   flex-direction: row;
+   width: 100%;
+}
 
+.moça {
+    width: 40%;
+    height: 100vh;
+    background-image: url('./img/MocaCadastro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 

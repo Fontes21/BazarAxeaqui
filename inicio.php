@@ -10,7 +10,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bazar Axe Aqui</h1>
+
+<header>
+    <div class="menu">
+        <a>Inicio</a>
+        <a>Contato</a>
+        <a>Minha Sacola</a>
+        <a>Perfil</a>
+    </div>
+</header>
+
+<div class="banner">
+    <div class= "botao">
+        <button id="botao-hamburguer">☰</button>
+    </div>
+        <img src="img/banner2.png" width="390px" height="130px" >  
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
     <?php
 

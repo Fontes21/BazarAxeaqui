@@ -12,8 +12,14 @@
 </head>
 <body>
 
-    <img src="img/banner.png" >
-
+<header>
+    <div class="menu">
+        <a>Inicio</a>
+        <a>Contato</a>
+        <a>Minha Sacola</a>
+        <a>Perfil</a>
+    </div>
+</header>
 
     <h1>Capriche nas fotos e na descrição do seu produto</h1>
    
@@ -55,6 +61,7 @@
         <label> Subcategoria:</label><br>
         <input type="text" placeholder="calça,moleton,lençol.." name="Subcategoria" minlength="3" required><br><br>
   
+        
         <label>Quantidade:</label><br>
         <input type="text" placeholder="" name="Quantidade" required><br><br>
 
@@ -70,8 +77,6 @@
         <label>Tipo de entrega:</label><br>
         <input type="text" placeholder="" name="TipoDeEntrega" minlength="3" required><br><br>
 
-</div>
-    </div>
 
         <?php
  
@@ -116,5 +121,9 @@
     ?>
 
     <input type="submit" name="inserir" value="Cadastrar">
+
+    
+</div>
+    </div>
 
 </form>
