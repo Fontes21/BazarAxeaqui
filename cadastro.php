@@ -25,7 +25,8 @@
 
     <div id="cadascliente">
 
-    <h1>CADASTRE-SE AGORA:</h1>
+                   <h1>CADASTRE-SE AGORA:</h1>
+    <h2>RECEBA NOSSAS NOVIDADES E DESCONTOS EXCLUSIVOS!</h2>
 
     <form method="POST">
 
@@ -34,22 +35,21 @@
         <input type="text" placeholder= "Informe seu nome completo" name="nome" minlength="3" required><br><br>
  
         <label>Email:</label><br>
-        <input type="email" placeholder="Informe seu e-mail" name="email" minlength="3" required><br><br>
+        <input type="text" placeholder="Informe seu e-mail" name="email" minlength="3" required><br><br>
  
         <label>Senha:</label><br>
         <input type="password" placeholder="Informe uma senha com 8 caracteres ou mais" name="senha" minlength="3" required><br><br>
 
-    
-    <label>Tenho interesse em peças:<label><br>
+        <label>Tenho interesse em peças:<label><br>
 
         <div class="opcao">  
 
-      <article class="caixa"> 
-       <label>Femininas:</label><br></br>
-       <input type="checkbox" name="femininas"><br></br>
-       </article>
+        <article class="caixa"> 
+        <label>Femininas:</label><br></br>
+        <input type="checkbox" name="femininas"><br></br>
+        </article>
 
-       <article class="caixa">
+        <article class="caixa">
         <label>Masculinas:</label><br></br>
         <input type="checkbox" name="masculinas"><br></br>
         </article>
@@ -59,20 +59,20 @@
         <input type="checkbox" name="outrosProdutos"><br></br>
         </article>
 
-    </div>
+         </div>
 
-        <label>Você deseja:</label><br></br>
+         <label>Você deseja:</label><br></br>
 
         <section class="opcao">
 
-        <article class="caixa">
-        <label>Vender:</label><br></br>
-        <input type="checkbox" name="vender"><br></br>
-        </article>
+         <article class="caixa">
+         <label>Vender:</label><br></br>
+         <input type="checkbox" name="vender"><br></br>
+         </article>
 
-        <article class="caixa">
-        <label>Comprar:</label><br>
-        <input type="checkbox" name="comprar"><br></br>
+         <article class="caixa">
+         <label>Comprar:</label><br>
+         <input type="checkbox" name="comprar"><br></br>
         </article>
 
         <article class="caixa">
@@ -82,35 +82,56 @@
 
         </section>
   
-    </div>
+
+        <input class="botao" type="submit" name="inserir" value="Entrar">
+        </div>
+
+    </form>
+
 
 <div class='moça'>
 </div>
 
 </div>
 
-    <input type="submit" name="inserir" value="Cadastrar">
 
-    <?php
+<?php
  
-        if (isset($_REQUEST["inserir"]) ) 
-         {
-            
-            $feminina = "";
-            $masculina = "";
-            $outros = "";
-            $vender = "";
-            $comprar = "";
-            $ambos = "";
+ if (isset($_REQUEST["inserir"]) ) 
+  {
+     
+     $feminina = "";
+     $masculina = "";
+     $outros = "";
+     $vender = "";
+     $comprar = "";
+     $ambos = "";
 
-            include_once("cliente.php");
-            $u = new Cliente(); 
-            $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["senha"], $feminina, $masculina ,$outros, $vender, $comprar,$ambos); 
+     include_once("cliente.php");
+     $u = new Cliente(); 
+     $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["senha"], $feminina, $masculina ,$outros, $vender, $comprar,$ambos); 
 
-             echo $u->cliente() == true 
-             ?"<p>cadastrado com sucesso.</p>" 
-              :  "<p>Ocorreu um erro.</p>";
-        }
-    ?>
+      echo $u->cliente() == true 
+      ?"<p>cadastrado com sucesso.</p>" 
+       :  "<p>Ocorreu um erro.</p>";
+ }
+?>
 
 </form>
+
+<footer>
+
+<div class="rodape">
+
+<div class='redes'>
+</div>
+
+</div>
+    <p>Av. Conselheiro Nébias, 309 Vila Matias, Santos - SP, 11015-003-  (13)  12345-6789</p> 
+    <p>Abre Seg a Sexta às 08:00 até 18:00  Dom e Sáb: 09:00 ás 13:00 </p>
+    <p>@Bazar_AxeAki     Bazar_AxeAki   Bazar_axeaki@gmail.com </p>
+</div>
+ 
+
+</footer>
+
