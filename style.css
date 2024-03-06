@@ -6,19 +6,19 @@ body
 .header
 {
    background-color: #432F6C;
-   display: flex;
+   display: none;
    justify-content: space-between;
    color: #ffff;
    font-family: "Inter", sans-serif;
    padding: 10px;
    width:400px;
    height:200px;
+   margin:0px
 }
 
 .botao
 {
     position: absolute;
-
 }
 
 a
@@ -26,16 +26,6 @@ a
   font-size: 30px;
   padding: 10px;
 }
-
-#botao-hamburguer
-{
- background-color: transparent;
- border: transparent;
- color: #ffff;
- font-size: 30px;
- height: 30px;
-}
-
 
 .opcao
 {
@@ -70,7 +60,7 @@ a
 
 input[type="text"]
 {
-    width: 280px;
+    width: 310px;
     margin: 9px;
     height: 25px;
     padding: 2%;
@@ -83,10 +73,11 @@ input[type="text"]
 
 input[type="checkbox"]
 {
-    width: 150px;
-    margin: 9px;
-    height: 25px;
-    padding: 1%;
+    
+    height: 20px;
+    margin: 0px;
+    padding: 2%;
+    margin-top: 10px;
     border:#0066FF 1px solid; 
     border-radius: 5px;
     color:black;
@@ -106,17 +97,6 @@ label
     margin: 10px;
 }
 
-h1
-{
- font-size: 25px;
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 10%;
- 
- 
-}
-
 .opcao
 {
     display: flex;
@@ -127,6 +107,118 @@ h1
 {
     display:none;
 }
+
+#botao-hamburguer
+{
+ background-color: transparent;
+ border: transparent;
+ color: #AEAEAE;
+ font-size: 40px;
+ height: 30px;
+ position: absolute;
+ left: 340px;
+ top: 60px;
+}
+
+.bannermenu {
+    width: 400px;
+    margin: 0px;
+    height: 200px;
+    background-image: url('./img/mob.png');
+    background-size: cover;
+
+}
+
+h2
+{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    color: #5D72E9;
+    padding: 5%;
+    
+}
+label
+{
+    margin: 10px;
+    font-family: Inter;
+}
+
+#cadascliente
+{
+    height: 700px;
+    width: 350px;
+    padding: 2%;
+    margin: 10px;
+    border:#432F6C 1px solid;
+    color: black;
+}
+
+h1
+{
+ font-size: 20px;
+ display: flex;
+ font-family: Inter;
+ justify-content: center;
+ align-items: center;
+ padding: 4%;
+}
+
+input[type="password"]
+{
+    width: 310px;
+    margin: 9px;
+    height: 25px;
+    padding: 2%;
+    border:#0066FF 1px solid; 
+    border-radius: 5px;
+    color:black;
+    align-items: center;
+}
+
+.caixa
+{
+   margin: 5px;
+   display: flex;
+   justify-content: center;
+}
+
+.opcao label
+{
+    font-size: 15px;
+}
+
+footer
+{
+    background-color: #432F6C;
+    color: #ffff;
+    justify-content: center;
+    padding: 2%;
+    margin: 0px;
+    align-items: center;
+    font-family: Inter;
+    font-size: 10px;
+    margin-top: 70px;
+
+}
+
+.conjunto
+{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -154,6 +246,20 @@ header
    font-family: "Inter", sans-serif;
    padding: 10px;
    height: 50px;
+}
+
+.header
+{
+    display: flex;
+    background-color: #432F6C;
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+
 }
 
 a
@@ -284,7 +390,7 @@ label
 #cadascliente
 {
     height: 780px;
-    width: 830px;
+    width: 430px;
     padding: 1%;
     margin: 150px;
     border:#432F6C 1px solid;
@@ -365,7 +471,10 @@ p
     background-image: url('/img/RedeSociais.png');
 }
 
-
+.bannermenu
+{
+    display: none;
+}
 
 
 

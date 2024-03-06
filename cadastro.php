@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="menu">
         <a>Inicio</a>
         <a>Contato</a>
@@ -20,6 +20,14 @@
         <a>Perfil</a>
     </div>
 </header>
+
+<div class="banner">
+    <div class= "hamburguer">
+    <button id="botao-hamburguer">☰</button>
+    </div>
+
+<div class='bannermenu'>
+</div>
 
 <div class="conjunto"> 
 
@@ -55,7 +63,7 @@
         </article>
     
         <article class="caixa">
-        <label>Outros Produtos:</label><br></br>
+        <label>Outros:</label><br></br>
         <input type="checkbox" name="outrosProdutos"><br></br>
         </article>
 
