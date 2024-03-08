@@ -1,0 +1,147 @@
+body
+{
+    margin: 0px;
+}
+
+.header
+{
+   background-color: #432F6C;
+   display: none;
+   justify-content: space-between;
+   color: #ffff;
+   font-family: "Inter", sans-serif;
+   padding: 10px;
+   width:400px;
+   height:200px;
+   margin:0px
+}
+
+
+.bannermenu 
+{
+    width: 400px;
+    margin: 0px;
+    height: 200px;
+    background-image: url('../img/mob.png');
+    background-size: cover;
+
+}
+
+#botao-hamburguer
+{
+ background-color: transparent;
+ border: transparent;
+ color: #AEAEAE;
+ font-size: 40px;
+ height: 30px;
+ position: absolute;
+ left: 340px;
+ top: 60px;
+}
+
+input[type="text"]
+{
+    width: 300px;
+    margin: 9px;
+    height: 25px;
+    padding: 2%;
+    border:#0066FF 1px solid; 
+    border-radius: 5px;
+    color:black;
+    align-items: center;
+    
+}
+
+input[type="checkbox"]
+{
+    
+    height: 20px;
+    margin: 0px;
+    padding: 2%;
+    margin-top: 10px;
+    border:#0066FF 1px solid; 
+    border-radius: 5px;
+    color:black;
+    align-items: center;
+    
+}
+
+.cadastro
+
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+h2
+{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    color: #5D72E9;
+    padding: 5%;
+    
+}
+label
+{
+    margin: 10px;
+    font-family: Inter;
+}
+
+#cadastro
+{
+    height: 1200px;
+    width: 330px;
+    padding: 2%;
+    margin: 8px;
+    border:#432F6C 1px solid;
+    color: black;
+}
+
+h1
+{
+ font-size: 20px;
+ display: flex;
+ font-family: Inter;
+ justify-content: center;
+ align-items: center;
+ padding: 4%;
+}
+
+.caixa
+{
+   margin: 5px;
+   display: flex;
+   justify-content: center;
+}
+
+.opcao label
+{
+    font-size: 15px;
+}
+
+#dupla
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+footer
+{
+    background-color: #432F6C;
+    color: #ffff;
+    justify-content: center;
+    padding: 2%;
+    margin: 0px;
+    align-items: center;
+    font-family: Inter;
+    font-size: 10px;
+    margin-top: 70px;
+
+}

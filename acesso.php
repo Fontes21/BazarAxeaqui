@@ -4,20 +4,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="stylee.css" rel="stylesheet">
-    <script src="assets/js/util.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
+    <link href="CSS/stylee3.css" rel="stylesheet">
 </head>
 <body>
 
-   <img src="img/banner.png">
 
-    <h1>Acesso</h1>
+<div class="banner">
+    <div class= "hamburguer">
+    <button id="botao-hamburguer">☰</button>
+    </div>
 
- 
+
+<div class='bannermenu'>
+</div>
+
+    <h1>Area de Login</h1>
 
     <div id="cadastro">
 
@@ -60,8 +67,22 @@
         ?>
 
     </form>
+    
+<footer>
 
+ <div class="rodape">
 
+<div class='redes'>
+</div>
+
+</div>
+    <p>Av. Conselheiro Nébias, 309 Vila Matias, Santos - SP, 11015-003-  (13)  12345-6789</p> 
+    <p>Abre Seg a Sexta às 08:00 até 18:00  Dom e Sáb: 09:00 ás 13:00 </p>
+    <p>@Bazar_AxeAki     Bazar_AxeAki   Bazar_axeaki@gmail.com </p>
+</div>
+ 
+
+</footer>
     
 </body>
 </html>

@@ -1,0 +1,110 @@
+body
+{
+    margin: 0px;
+}
+
+.header
+{
+   background-color: #432F6C;
+   display: none;
+   justify-content: space-between;
+   color: #ffff;
+   font-family: "Inter", sans-serif;
+   padding: 10px;
+   width:400px;
+   height:200px;
+   margin:0px
+}
+
+
+.bannermenu 
+{
+    width: 400px;
+    margin: 0px;
+    height: 200px;
+    background-image: url('../img/mob.png');
+    background-size: cover;
+
+}
+
+#botao-hamburguer
+{
+ background-color: transparent;
+ border: transparent;
+ color: #AEAEAE;
+ font-size: 40px;
+ height: 30px;
+ position: absolute;
+ left: 340px;
+ top: 60px;
+}
+
+h1
+{
+ font-size: 20px;
+ display: flex;
+ font-family: Inter;
+ justify-content: center;
+ align-items: center;
+ padding: 4%;
+}
+
+input[type="text"]
+{
+    width: 300px;
+    margin: 9px;
+    height: 25px;
+    padding: 2%;
+    border:#0066FF 1px solid; 
+    border-radius: 5px;
+    color:black;
+    align-items: center;
+    
+}
+
+input[type="password"]
+{
+    width: 310px;
+    margin: 9px;
+    height: 25px;
+    padding: 2%;
+    border:#0066FF 1px solid; 
+    border-radius: 5px;
+    color:black;
+    align-items: center;
+}
+
+.cadastro
+
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+#cadastro
+{
+    height: 220px;
+    width: 330px;
+    padding: 2%;
+    margin: 20px;
+    margin-top: 50px;
+    border:#432F6C 1px solid;
+    color: black;
+}
+
+footer
+{
+    background-color: #432F6C;
+    color: #ffff;
+    justify-content: center;
+    padding: 2%;
+    margin: 0px;
+    align-items: center;
+    font-family: Inter;
+    font-size: 10px;
+    margin-top: 70px;
+
+}

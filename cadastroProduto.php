@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
-    <link href="style.css" rel="stylesheet">
+    <link href="./CSS/stylee.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="menu">
         <a>Inicio</a>
         <a>Contato</a>
@@ -21,7 +21,16 @@
     </div>
 </header>
 
-    <h1>Capriche nas fotos e na descrição do seu produto</h1>
+<div class="banner">
+    <div class= "hamburguer">
+    <button id="botao-hamburguer">☰</button>
+    </div>
+
+
+<div class='bannermenu'>
+</div>
+
+    <h1>Capriche na descrição do produto</h1>
    
     <div class="caixa">
 
@@ -77,8 +86,7 @@
         <label>Tipo de entrega:</label><br>
         <input type="text" placeholder="" name="TipoDeEntrega" minlength="3" required><br><br>
 
-
-        <?php
+<?php
  
         if (isset($_REQUEST["inserir"]) ) 
          {
@@ -118,12 +126,28 @@
              ?"<p>Produto cadastrado com sucesso.</p>" 
               :  "<p>Ocorreu um erro.</p>";
         }
-    ?>
+?>
 
     <input type="submit" name="inserir" value="Cadastrar">
-
     
 </div>
     </div>
 
 </form>
+
+
+<footer>
+
+<div class="rodape">
+
+<div class='redes'>
+</div>
+
+</div>
+    <p>Av. Conselheiro Nébias, 309 Vila Matias, Santos - SP, 11015-003-  (13)  12345-6789</p> 
+    <p>Abre Seg a Sexta às 08:00 até 18:00  Dom e Sáb: 09:00 ás 13:00 </p>
+    <p>@Bazar_AxeAki     Bazar_AxeAki   Bazar_axeaki@gmail.com </p>
+</div>
+ 
+
+</footer>

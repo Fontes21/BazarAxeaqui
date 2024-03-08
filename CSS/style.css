@@ -97,12 +97,6 @@ label
     margin: 10px;
 }
 
-.opcao
-{
-    display: flex;
-    flex-direction: row;
-}
-
 .celular
 {
     display:none;
@@ -124,7 +118,7 @@ label
     width: 400px;
     margin: 0px;
     height: 200px;
-    background-image: url('./img/mob.png');
+    background-image: url('../img/mob.png');
     background-size: cover;
 
 }
