@@ -41,6 +41,8 @@ body
 
 .categorias
 {
+
+    display: none;
     background-color: #432F6C;
     color: #ffff;
     font-size: 14px;
@@ -59,7 +61,7 @@ h1
 {
     font-family: Inter;
     color: #0245a8;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
     margin: 15px;
 
