@@ -25,6 +25,19 @@
     </div>
 </header>
 
+
+<header class="principal"> 
+ <div class="menuu">
+        <a>Inicio</a>
+        <a>Contato</a>
+        <a>Minha Sacola</a>
+        <a>Perfil</a>
+    </div>
+    <button id="CP">Cadastrar Produto</button>
+    <button id="Login">Login</button>
+</header>
+
+
 <div class="banner">
     <div class= "hamburguer">
     <button id="botao-hamburguer">☰</button>
@@ -89,8 +102,6 @@
     </div>
 
 </div>
-
-
 <h1>Peças em Destaque</h1>
 
 <h3>Peças Femininas</h3>
@@ -99,10 +110,24 @@
   <div class="matelasse"> 
     <h2>R$ 161    R$ 189</h2>
     </div>   
+
     <div class="camisa"> 
     <h2>R$50      R$65</h2>
     </div>
+
+    <div class="camisaB"> 
+    <h2>R$50      R$65</h2>
+    </div>
+
+    <div class="camisaV"> 
+    <h2>R$50      R$65</h2>
+    </div>
 </div>
+
+</div>
+
+
+
 
 <h3>Sapatos</h3>
 

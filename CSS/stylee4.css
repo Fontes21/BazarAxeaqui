@@ -72,7 +72,7 @@ h1
     width: 160px;
     margin: 20px;
     height: 110px;
-    background-image: url('../img/bolsas.png');
+    background-image: url('../img/bolsas.jpg');
     background-size: cover;
 
 }
@@ -82,7 +82,7 @@ h1
     width: 160px;
     margin: 20px;
     height: 110px;
-    background-image: url('../img/acessorio.png');
+    background-image: url('../img/acessorio.jpeg');
     background-size: cover;
 }
 
@@ -98,7 +98,7 @@ h1
     width: 160px;
     margin: 20px;
     height: 110px;
-    background-image: url('../img/sapatos.png');
+    background-image: url('../img/sapato.webp');
     background-size: cover;
 }
 
@@ -158,7 +158,7 @@ h3
     width: 150px;
     margin: 20px;
     height: 120px;
-    background-image: url('../img/bolsaPreta.png');
+    background-image: url('../img/bolsapreta.jpg');
     background-size: cover;
 }
 
@@ -292,5 +292,366 @@ footer
     font-family: Inter;
     font-size: 10px;
     margin-top: 70px;
+
+}
+
+.principal
+{
+    display: none; 
+}
+
+.categorias
+{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1280px){
+
+
+    .principal
+    {
+        display: flex;
+        background-color: #432F6C;
+        height: 30px;
+        color: #ffff;
+        font-size: 25px;
+        text-align: center;
+        font-family: Inter;
+        padding: 1%;
+
+
+    }
+
+    .menuu a
+    {
+        margin: 30px;
+
+    }
+    
+
+    #botao-hamburguer
+    {
+        display: none;
+    }
+    
+    .bannermenu 
+{
+    width: 100%;
+    margin: 0px;
+    height: 500px;
+    background-image: url('../img/banner2.png');
+    background-size: cover;
+
+}
+
+
+    .categorias
+{
+    display: block;
+    background-color: #432F6C;
+    height: 40px;
+    color: #ffff;
+    font-size: 25px;
+}
+
+
+    .pecas
+{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.bemvindo
+{
+    font-family: Inter;
+    color: #0245a8;
+    font-size: 30px;
+    margin-top: 35px;
+    margin: 30px;
+
+}
+
+ h1
+{
+    font-family: Inter;
+    color: #0245a8;
+    font-size: 30px;
+    margin-top: 35px;
+    margin: 30px;
+}
+
+.foto1
+{
+    width: 550px;
+    margin-right: 100px;
+    height: 360px;
+    background-image: url('../img/bolsas.jpg');
+    background-size: cover;
+
+}
+
+.foto2
+{
+    width: 550px;
+    margin-right: 100px;
+    height: 360px;
+    background-image: url('../img/acessorio.jpeg');
+    background-size: cover;
+}
+
+#fila1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;   
+}
+
+
+.foto3
+{
+    width: 550px;
+    margin-right: 100px;
+    height: 360px;
+    background-image: url('../img/sapato.webp');
+    background-size: cover;
+}
+
+.foto4
+{
+    width: 550px;
+    margin-right: 100px;
+    height: 360px;
+    background-image: url('../img/roupas.png');
+    background-size: cover;
+}
+
+#fila2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+
+button
+{
+    margin-top: 310px;
+    border-radius:10%;
+    height: 40px;
+    width: 100px;
+    background-color: #0066FF;
+    color: #ffff;
+}
+
+h2
+{
+   position: absolute;
+   color: #ffff;
+   font-family: Inter;
+   margin-top: 260px;
+   font-size: 40px;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+
+.pecas
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+h3
+{
+   color: #000000;
+   font-family: Inter;
+   font-size: 25px;
+   margin: 15px;
+}
+
+
+.femininas
+{
+  display: flex;
+  flex-direction: row;
+  width: 1800px;
+  height: 300px;
+  background-color: #DBDBDB;
+}
+
+.matelasse
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/bolsapreta.jpg');
+    background-size: cover;
+}
+
+.matelasse h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 260px;
+   font-size: 20px;
+}
+
+.camisa
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/camisapreta.jpg');
+    background-size: cover;
+}
+
+.camisaB
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/camisabranca.webp');
+    background-size: cover;
+}
+
+.camisaB h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 140px;
+   font-size: 15px;
+}
+
+.camisaV
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/camisaV.webp');
+    background-size: cover;
+}
+
+
+
+.camisa h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 140px;
+   font-size: 15px;
+}
+
+.Sapato
+{
+  display: flex;
+  flex-direction: row;
+  width: 1800px;
+  margin: 30px;
+  height: 300px;
+  background-color: #DBDBDB;
+}
+
+.tenis
+{
+    width: 150px;
+    margin: 20px;
+    height: 120px;
+    background-image: url('../img/tenis.png');
+    background-size: cover;
+}
+
+.tenis h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 140px;
+   font-size: 15px;
+}
+
+.tenisp
+{
+    width: 150px;
+    margin: 20px;
+    height: 120px;
+    background-image: url('../img/tenispreto.png');
+    background-size: cover;
+}
+
+.tenisp h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 140px;
+   font-size: 15px;
+}
+
+.masculinas
+{
+  display: flex;
+  flex-direction: row;
+  width: 1800px;
+  margin: 30px;
+  height: 300px;
+  background-color: #DBDBDB;
+}
+
+.short
+{
+    width: 150px;
+    margin: 20px;
+    height: 120px;
+    background-image: url('../img/short.png');
+    background-size: cover;
+}
+
+.short h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 140px;
+   font-size: 15px;
+}
+
+.Nike
+{
+    width: 150px;
+    margin: 20px;
+    height: 120px;
+    background-image: url('../img/camisaNike.png');
+    background-size: cover;
+}
+
+.Nike h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 140px;
+   font-size: 15px;
+}
+
+
+
+
+
+
 
 }
