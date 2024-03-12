@@ -129,7 +129,7 @@ h2
 
 button
 {
-    margin-top: 85px;
+    margin-top: 100px;
     border-radius:10%;
     background-color: #0066FF;
     color: #ffff;
@@ -313,6 +313,23 @@ footer
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1280px){
 
 
@@ -323,9 +340,11 @@ footer
         height: 30px;
         color: #ffff;
         font-size: 25px;
+        flex-direction: row;
         text-align: center;
         font-family: Inter;
         padding: 1%;
+        position: relative;
 
 
     }
@@ -445,13 +464,23 @@ footer
 
 button
 {
-    margin-top: 310px;
+    margin-top: 300px;
     border-radius:10%;
     height: 40px;
     width: 100px;
     background-color: #0066FF;
     color: #ffff;
 }
+
+header button 
+{
+    position:absolute;
+    border-radius:10%;
+    background-color: #0066FF;
+    color: #ffff;
+    right:50%;
+}
+
 
 h2
 {
@@ -470,6 +499,7 @@ h2
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    
 }
 
 
@@ -486,8 +516,9 @@ h3
 {
   display: flex;
   flex-direction: row;
+  justify-content: space-around ;
   width: 1800px;
-  height: 300px;
+  height: 360px;
   background-color: #DBDBDB;
 }
 
@@ -509,7 +540,7 @@ h3
    font-size: 20px;
 }
 
-.camisa
+.camisa 
 {
     width: 250px;
     margin: 30px;
@@ -517,6 +548,17 @@ h3
     background-image: url('../img/camisapreta.jpg');
     background-size: cover;
 }
+
+
+.camisa h2
+{
+    position: absolute;
+    color:#000000;
+    font-family: Inter;
+    margin-top: 260px;
+    font-size: 20px;
+}
+
 
 .camisaB
 {
@@ -529,11 +571,11 @@ h3
 
 .camisaB h2
 {
-   position: absolute;
-   color:#000000;
-   font-family: Inter;
-   margin-top: 140px;
-   font-size: 15px;
+    position: absolute;
+    color:#000000;
+    font-family: Inter;
+    margin-top: 260px;
+    font-size: 20px;
 }
 
 .camisaV
@@ -545,32 +587,32 @@ h3
     background-size: cover;
 }
 
-
-
-.camisa h2
+.camisaV h2
 {
-   position: absolute;
+   pposition: absolute;
    color:#000000;
    font-family: Inter;
-   margin-top: 140px;
-   font-size: 15px;
+   margin-top: 260px;
+   font-size: 20px;
 }
+
 
 .Sapato
 {
   display: flex;
   flex-direction: row;
+  justify-content: space-around ;
   width: 1800px;
-  margin: 30px;
-  height: 300px;
+  height: 360px;
   background-color: #DBDBDB;
 }
 
+
 .tenis
 {
-    width: 150px;
-    margin: 20px;
-    height: 120px;
+    width: 250px;
+    margin: 30px;
+    height: 250px;
     background-image: url('../img/tenis.png');
     background-size: cover;
 }
@@ -580,15 +622,15 @@ h3
    position: absolute;
    color:#000000;
    font-family: Inter;
-   margin-top: 140px;
-   font-size: 15px;
+   margin-top: 260px;
+   font-size: 20px;
 }
 
 .tenisp
 {
-    width: 150px;
-    margin: 20px;
-    height: 120px;
+    width: 250px;
+    margin: 30px;
+    height: 250px;
     background-image: url('../img/tenispreto.png');
     background-size: cover;
 }
@@ -598,25 +640,62 @@ h3
    position: absolute;
    color:#000000;
    font-family: Inter;
-   margin-top: 140px;
-   font-size: 15px;
+   margin-top: 260px;
+   font-size: 20px;
+}
+
+.tenisc
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/teniscorrida.png');
+    background-size: cover;
+}
+
+.tenisc h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 260px;
+   font-size: 20px;
+}
+
+.tenisj
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/tenisj.png');
+    background-size: cover;
+}
+
+.tenisj h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 260px;
+   font-size: 20px;
 }
 
 .masculinas
 {
   display: flex;
   flex-direction: row;
+  justify-content: space-around ;
   width: 1800px;
-  margin: 30px;
-  height: 300px;
+  height: 360px;
   background-color: #DBDBDB;
 }
 
+
 .short
 {
-    width: 150px;
-    margin: 20px;
-    height: 120px;
+    width: 250px;
+    margin: 30px;
+    height: 250px;
     background-image: url('../img/short.png');
     background-size: cover;
 }
@@ -626,15 +705,16 @@ h3
    position: absolute;
    color:#000000;
    font-family: Inter;
-   margin-top: 140px;
-   font-size: 15px;
+   margin-top: 260px;
+   font-size: 20px;
 }
+
 
 .Nike
 {
-    width: 150px;
-    margin: 20px;
-    height: 120px;
+    width: 250px;
+    margin: 30px;
+    height: 250px;
     background-image: url('../img/camisaNike.png');
     background-size: cover;
 }
@@ -644,9 +724,77 @@ h3
    position: absolute;
    color:#000000;
    font-family: Inter;
-   margin-top: 140px;
-   font-size: 15px;
+   margin-top: 260px;
+   font-size: 20px;
 }
+
+.camiseta
+{
+    width: 250px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/camiseta.webp');
+    background-size: cover;
+}
+
+.camiseta h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 260px;
+   font-size: 20px;
+}
+
+.verde
+{
+    width: 300px;
+    margin: 30px;
+    height: 250px;
+    background-image: url('../img/verde.webp');
+    background-size: cover;
+}
+
+.verde h2
+{
+   position: absolute;
+   color:#000000;
+   font-family: Inter;
+   margin-top: 260px;
+   font-size: 20px;
+}
+
+footer
+{
+    background-color: #432F6C;
+    color: #ffff;
+    justify-content: center;
+    padding: 2%;
+    margin: 0px;
+    align-items: center;
+    font-family: Inter;
+    font-size: 15px;
+    margin-top: 70px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

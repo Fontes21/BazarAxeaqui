@@ -33,8 +33,8 @@
         <a>Minha Sacola</a>
         <a>Perfil</a>
     </div>
-    <button id="CP">Cadastrar Produto</button>
-    <button id="Login">Login</button>
+    <button class="CP">Cadastrar Produto</button>
+    <button class="CP">Login</button>
 </header>
 
 
@@ -108,19 +108,19 @@
 
 <div class="femininas">
   <div class="matelasse"> 
-    <h2>R$ 161    R$ 189</h2>
+    <h2>R$ 189,00</h2>
     </div>   
 
     <div class="camisa"> 
-    <h2>R$50      R$65</h2>
+    <h2>R$50,00</h2>
     </div>
 
     <div class="camisaB"> 
-    <h2>R$50      R$65</h2>
+    <h2>R$65,00</h2>
     </div>
 
     <div class="camisaV"> 
-    <h2>R$50      R$65</h2>
+    <h2>R$59,00</h2>
     </div>
 </div>
 
@@ -133,10 +133,19 @@
 
 <div class="Sapato">
   <div class="tenis"> 
-    <h2>R$109,90</h2>
-    </div>   
+    <h2>R$109,90 </h2>
+    </div>  
+
     <div class="tenisp"> 
-    <h2>R$69,90    R$80,00</h2>
+    <h2>R$80,00</h2>
+    </div>
+
+    <div class="tenisc"> 
+    <h2>R$99,00  </h2>
+    </div>
+
+    <div class="tenisj"> 
+    <h2>R$112,00 </h2>
     </div>
 </div>
 
@@ -144,10 +153,16 @@
 
 <div class="masculinas">
   <div class="short"> 
-    <h2>R$ 161    R$ 189</h2>
+    <h2>R$65,00</h2>
     </div>   
     <div class="Nike"> 
-    <h2>R$50      R$65</h2>
+    <h2>R$65,00</h2>
+    </div>
+    <div class="camiseta"> 
+    <h2>R$50,00 </h2>
+    </div>
+    <div class="verde"> 
+    <h2>Por apenas R$25,00</h2>
     </div>
 </div>
 
